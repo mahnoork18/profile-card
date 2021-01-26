@@ -1,0 +1,95 @@
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-blue: hsl(229, 23%, 23%);
+    --dark-grayblue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --font: 'Kumbh Sans'
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+    html,
+    body {
+      background-color: var(--dark-cyan);
+      background-image: url(images/bg-pattern-top.svg),url(images/bg-pattern-bottom.svg) ;
+      background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+      background-repeat: no-repeat, no-repeat;
+      font-family: var(--font);
+      height: 100%;
+    }
+
+.container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    margin-left: 240px;
+    justify-content: center;
+  }
+.card {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: var(--dark-grayblue);
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+  }
+  .card-stats{
+    border-top: .1px solid var(--dark-gray);
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .mid img {
+    border: 5px solid #fff;
+    border-radius: 50%;
+    margin-top: -3.6em;
+  }
+  .mid h1{
+      font-weight: bold;
+      color: #111;
+  }
+  .mid p{
+      font-weight: 100;
+      font-size: 12px;
+      margin-top: 5px;
+  }
+  .mid span{
+      font-weight: 100;
+      margin-left: 10px;
+      font-size: 18px;
+  }
+  .bottom{
+      border-top: 1px solid var( --dark-gray);
+      opacity: 0.9;
+      width: 100%;
+      margin-top: 30px;
+      height: 100px;
+ 
+      display: flex;
+      flex-direction: row;
+justify-content: space-evenly;
+  }
+  .stats{
+      margin-top: 30px;
+  }
+  .stats h3{
+      font-weight: bold;
+      color: #111;
+  }
+.stats p{
+    font-weight: 100;
+    font-size: 10px;
+}
